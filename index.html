@@ -3,12 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Introduction </title>
+    <title>Student ID Card</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif; /* Standard readable font */
+        }
+
+        .card {
+            background-color: white;
+            width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #333; /* The dark border from the image */
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between image and text */
+        }
+
+        .photo-container {
+            flex-shrink: 0; /* Prevents image from squishing */
+        }
+
+        .photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ccc; /* Placeholder color if image fails */
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #111;
+        }
+
+        .details {
+            font-size: 18px;
+            color: #222;
+            margin: 4px 0;
+            line-height: 1.4;
+        }
+
+        .label {
+            /* If you want the label to be lighter or different, style here */
+        }
+    </style>
 </head>
 <body>
-    <h1>Name: Aditya Bansal</h1>
-    <h2>Enrollment No. BTAD24O1002<h2>
-        <h3>Branch: AIDS<h3>
-            <img src="logo.JPEG" alt="Random Image">
+
+    <div class="card">
+        <div class="photo-container">
+            <img src="Aditya.jpg" alt="Student Photo" class="photo">
+        </div>
+        
+        <div class="info">
+            <h1 class="name">Aditya Bansal</h1>
+            <p class="details">Enrollment: BTAD24O1002</p>
+            <p class="details">Branch: AIDS</p>
+            <p class="details">Semester: 3rd</p>
+        </div>
+    </div>
+
 </body>
 </html>
